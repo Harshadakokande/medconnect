@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedConnect - Online Health Consultation</title>
+    <link rel="stylesheet" href="call.css">
+</head>
+<body>
+
+        <header>
+        <img src="head.jpg" class="logo">
+        <h1></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="consultation.html">consultaion</a></li>
+                <li class="btn">sign up</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="consultation.html">
+        <!-- Video calling section -->
+        <section id="video-call">
+            <!-- Video container -->
+            <div id="video-container">
+                <video id="local-video" autoplay muted><img src="call.jpg" class="call"></video>
+                <video id="remote-video" autoplay><img src="call.jpg" class="call"></video>
+            </div>
+            <!-- Video controls -->
+            <div id="video-controls">
+                <button id="start-call">Start Call</button>
+                <button id="end-call">End Call</button>
+            </div>
+        </section>
+        <!-- Chat box section -->
+        <section id="chat-box">
+            <!-- Chat messages display -->
+            <div id="chat-messages"></div>
+            <!-- Chat input -->
+            <input type="text" id="message-input" placeholder="Type your message...">
+            <button id="send-message">Send</button>
+        </section>
+    </form>
+    </main>
+    <script src="script.js"></script>
+
+    <section class="hero">
+        <h2>Welcome to MedConnect</h2>
+        <p>Your trusted platform for online health consultation.</p>
+        <a href="services.html" class="cta-button">Explore Our Services</a>
+    </section>
+
+    <section class="features">
+        <h2>Our Features</h2>
+        <div class="feature">
+            <h3>Expert Doctors</h3>
+            <p>Connect with experienced and qualified medical professionals.</p>
+        </div>
+        <div class="feature">
+            <h3>Convenient Consultation</h3>
+            <p>Get medical advice and prescriptions from the comfort of your home.</p>
+        </div>
+        <div class="feature">
+            <h3>Secure and Confidential</h3>
+            <p>Your privacy and data security are our top priorities.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 MedConnect. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedConnect - Online Health Consultation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>MedConnect</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Welcome to MedConnect</h2>
+        <p>Your trusted platform for online health consultation.</p>
+        <a href="services.html" class="cta-button">Explore Our Services</a>
+    </section>
+
+    <section class="features">
+            <h1>Contacts </h3>
+                <li>Dr. Rajesh Sharma - Contact: +91 8329207945</li>
+                <li>Dr. Priya Patel - Contact: +91 9372965961</li>
+                <li>Dr. Sanjay Singh - Contact: +91 9284299137</li>
+
+                <li><a href=https://www.hindujahospital.com/contact-us-enquiry>contact us</a></li>
+            <p>Your privacy and data security are our top priorities.</p>
+            <p>contacts</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 MedConnect. All rights reserved.</p>
+    </footer>
+</body>
+</html>

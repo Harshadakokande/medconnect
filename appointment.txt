@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedConnect - Online Health Consultation</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <header>
+        <h1>MedConnect</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sympton checker.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <h2>Welcome to MedConnect</h2>
+        <p>Get connected with healthcare professionals from the comfort of your home.</p>
+        <a href="#" class="btn">Book an Appointment</a>
+    </section>
+    <footer>
+        <p>&copy; 2024 MedConnect. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

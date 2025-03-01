@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedConnect - Services</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>MedConnect - Services</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="service">
+                <h3>Online Consultation</h3>
+                <p>Connect with healthcare professionals for remote consultations.</p>
+            </div>
+            <div class="service">
+                <h3>Prescription Refills</h3>
+                <p>Convenient refill services for existing prescriptions.</p>
+            </div>
+            <div class="service">
+                <h3>Medical History Management</h3>
+                <p>Secure storage and management of medical records.</p>
+            </div>
+            <div class="service">
+                <h3>Specialist Referrals</h3>
+                <p>Assistance in connecting with specialist doctors as needed.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 MedConnect. All rights reserved.</p>
+    </footer>
+</body>
+</html>
