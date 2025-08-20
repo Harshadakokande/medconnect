@@ -1,0 +1,72 @@
+/* Smooth scroll for internal links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Reusable utilities (built on Tailwind) */
+.section-title {
+  @apply text-3xl md:text-4xl font-extrabold text-center;
+}
+
+.btn-primary {
+  @apply inline-block bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition;
+}
+
+.btn-secondary {
+  @apply inline-block bg-white text-blue-700 border border-blue-200 px-6 py-3 rounded-lg shadow hover:bg-blue-50 transition;
+}
+
+.card {
+  @apply p-6 bg-white rounded-2xl shadow hover:shadow-lg transition;
+}
+.card-title {
+  @apply font-semibold text-xl mb-2;
+}
+
+.label {
+  @apply block text-sm font-medium text-gray-700 mb-1;
+}
+.input {
+  @apply w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-200;
+}
+
+.doctor-card {
+  @apply bg-white rounded-2xl shadow overflow-hidden hover:shadow-lg transition;
+}
+.doctor-img {
+  @apply w-full h-56 object-cover;
+}
+
+/* Chatbot window */
+.chatbot {
+  position: fixed;
+  right: 1.25rem; /* 20px */
+  bottom: 5.5rem; /* above the toggle button */
+  width: 22rem;   /* 352px */
+  height: 28rem;  /* 448px */
+  background: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 60;
+}
+
+/* Small screens: full width chat */
+@media (max-width: 480px) {
+  .chatbot {
+    width: calc(100% - 2rem);
+    right: 1rem;
+    bottom: 6rem;
+  }
+}
+
+/* Optional: hide scrollbar aesthetic */
+#chat-messages::-webkit-scrollbar {
+  width: 8px;
+}
+#chat-messages::-webkit-scrollbar-thumb {
+  background: #e5e7eb;
+  border-radius: 9999px;
+}
