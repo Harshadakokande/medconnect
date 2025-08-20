@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MedConnect - Online Health Consultation</title>
+
+  <!-- Tailwind CSS (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow-md fixed top-0 w-full z-50">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+      <a href="index.html" class="flex items-center gap-2">
+        <span class="text-2xl font-bold text-blue-600">MedConnect</span>
+      </a>
+      <nav>
+        <ul class="flex gap-6 font-medium">
+          <li><a class="hover:text-blue-600" href="index.html">Home</a></li>
+          <li><a class="hover:text-blue-600" href="#services">Services</a></li>
+          <li><a class="hover:text-blue-600" href="#doctors">Doctors</a></li>
+          <li><a class="hover:text-blue-600" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="pt-24 md:pt-28">
+    <div class="h-[70vh] md:h-[75vh] bg-gradient-to-r from-blue-100 to-blue-200 flex items-center">
+      <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 items-center gap-10">
+        <div class="text-center md:text-left">
+          <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">
+            Your Health, Our Priority.
+          </h1>
+          <p class="mt-4 text-lg md:text-xl text-gray-700">
+            Connect with licensed doctors from the comfort of your home.
+          </p>
+          <div class="mt-6 flex gap-3 justify-center md:justify-start">
+            <a href="#services" class="btn-primary">Book an Appointment</a>
+            <a href="#contact" class="btn-secondary">Get Support</a>
+          </div>
+        </div>
+        <div class="hidden md:block">
+          <img src="https://images.unsplash.com/photo-1584467735815-f778f274e4a6?q=80&w=1200&auto=format&fit=crop" alt="Online consultation" class="rounded-2xl shadow-xl">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-16">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="section-title">Our Services</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
+        <div class="card">
+          <h3 class="card-title">Online Consultation</h3>
+          <p>Secure video & chat with certified doctors.</p>
+        </div>
+        <div class="card">
+          <h3 class="card-title">Prescription Refills</h3>
+          <p>Refill your ongoing prescriptions with ease.</p>
+        </div>
+        <div class="card">
+          <h3 class="card-title">Medical History</h3>
+          <p>Access your records anytime, anywhere.</p>
+        </div>
+        <div class="card">
+          <h3 class="card-title">Specialist Referrals</h3>
+          <p>Get guided referrals to top specialists.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Doctors -->
+  <section id="doctors" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="section-title">Our Doctors</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
+        <div class="doctor-card">
+          <img src="doct1.jpeg" alt="Doctor 1" class="doctor-img">
+          <div class="p-4">
+            <h3 class="font-semibold text-lg">Dr. John Smith</h3>
+            <p class="text-gray-600">Cardiologist</p>
+          </div>
+        </div>
+        <div class="doctor-card">
+          <img src="doct2.jpeg" alt="Doctor 2" class="doctor-img">
+          <div class="p-4">
+            <h3 class="font-semibold text-lg">Dr. Emily Johnson</h3>
+            <p class="text-gray-600">Neurologist</p>
+          </div>
+        </div>
+        <div class="doctor-card">
+          <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?q=80&w=1200&auto=format&fit=crop" alt="Doctor 3" class="doctor-img">
+          <div class="p-4">
+            <h3 class="font-semibold text-lg">Dr. Rajesh Sharma</h3>
+            <p class="text-gray-600">General Physician</p>
+          </div>
+        </div>
+        <div class="doctor-card">
+          <img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f89?q=80&w=1200&auto=format&fit=crop" alt="Doctor 4" class="doctor-img">
+          <div class="p-4">
+            <h3 class="font-semibold text-lg">Dr. Priya Patel</h3>
+            <p class="text-gray-600">Dermatologist</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="section-title">Contact Us</h2>
+      <div class="grid lg:grid-cols-2 gap-8 mt-10">
+        <form class="bg-white rounded-2xl shadow p-6 space-y-4">
+          <div>
+            <label class="label" for="name">Full Name</label>
+            <input id="name" type="text" class="input" placeholder="Your name" required>
+          </div>
+          <div>
+            <label class="label" for="email">Email</label>
+            <input id="email" type="email" class="input" placeholder="you@example.com" required>
+          </div>
+          <div>
+            <label class="label" for="message">Message</label>
+            <textarea id="message" class="input h-28" placeholder="How can we help?" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary w-full">Send Message</button>
+          <p class="text-xs text-gray-500 text-center">We’ll get back within 24–48 hours.</p>
+        </form>
+
+        <div class="bg-white rounded-2xl shadow p-6">
+          <h3 class="font-semibold text-xl">Quick Contacts</h3>
+          <ul class="mt-4 space-y-2 text-gray-700">
+            <li>📞 +91 83292 07945 (Dr. Rajesh Sharma)</li>
+            <li>📞 +91 93729 65961 (Dr. Priya Patel)</li>
+            <li>📞 +91 92842 99137 (Dr. Sanjay Singh)</li>
+            <li>🌐 <a class="text-blue-600 underline" href="https://www.hindujahospital.com/contact-us-enquiry" target="_blank" rel="noopener">Hinduja Hospital Contact</a></li>
+          </ul>
+          <div class="mt-6 text-sm text-gray-600">
+            <p><strong>Email:</strong> info@medconnect.com</p>
+            <p><strong>Toll-free:</strong> 1-800-MED-CONN</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 text-center py-6">
+    <p>&copy; 2024 MedConnect. All rights reserved.</p>
+  </footer>
+
+  <!-- Chatbot (Floating) -->
+  <div id="chatbot" class="chatbot hidden" aria-live="polite" aria-label="MedBot chat window">
+    <div class="flex items-center justify-between px-4 py-3 bg-blue-600 text-white">
+      <h3 class="font-semibold">MedBot – AI Assistant</h3>
+      <button id="close-chat" class="font-bold focus:outline-none">✕</button>
+    </div>
+    <div id="chat-messages" class="flex-1 p-3 overflow-y-auto text-sm"></div>
+    <div class="border-t p-3 flex items-center gap-2">
+      <input id="user-input" type="text" placeholder="Type your message…" class="flex-1 border rounded px-3 py-2 text-sm focus:outline-blue-600">
+      <button id="send-message" class="bg-blue-600 text-white px-3 py-2 rounded">Send</button>
+    </div>
+  </div>
+
+  <!-- Chatbot Toggle -->
+  <button id="toggle-chat" class="fixed bottom-5 right-5 bg-blue-600 text-white p-4 rounded-full shadow-lg hover:bg-blue-700 focus:outline-none" aria-label="Open MedBot chat">
+    💬
+  </button>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
